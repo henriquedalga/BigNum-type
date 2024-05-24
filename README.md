@@ -1,2 +1,7 @@
 # BigNum-type
-Uma implementação do tipo de dado BigNum em C, serve para lidar eficientemente com números de ordem muito grande 
+A proposta do seguinte trabalho é a implementação de um tipo abstrato de dados: BigNum - número de precisão arbitrária. Esse tipo deve conseguir armazenar números tão grandes quanto a memória da máquina puder aguentar, ou seja, números muito grandes. A ideia é utilizar essa TAD para conseguir calcular combinações (análise combinatória) de números grandes, sendo necessário para esse cálculo o uso do fatorial. Assim o BigNum é um tipo que armazena o resultado dos fatoriais e também tem suas próprias operações (soma, subtração, multiplicação e divisão).
+
+# Estrutura de dados
+Para armazenar o BigNum, foi utilizada uma lista encadeada, com nó cabeça. Cada ponteiro da lista guarda um algarismo de base 10. O nó cabeça recebe o nome de BigNum e armazena  um inteiro que guarda o tamanho da lista, um inteiro que guarda o algarismo mais significativo (chamarei de primeiro algarismo), um ponteiro para a lista encadeada, e um inteiro que guarda o sinal do número. A lista armazenará os algarismos começando do menos significativo (chamarei de último algarismo) e indo em direção ao mais significativo, dessa forma a utilização dos algoritmos das operações torna-se mais rápida, pois os algoritmos começam a calcular pelos últimos algarismos, em contrapartida a impressão dos valores na ordem natural torna-se mais lenta, pois realiza-se o processo inverso.
+
+Documentação diponível em pdf neste repositório
